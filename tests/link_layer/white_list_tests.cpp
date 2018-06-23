@@ -1,6 +1,6 @@
 #include <bluetoe/link_layer/white_list.hpp>
 
-#define BOOST_TEST_MODULE
+#define BOOST_TEST_MODULE MASTER_TEST_SUITE_NAME
 #include <boost/test/included/unit_test.hpp>
 #include <boost/test/test_case_template.hpp>
 #include <boost/mpl/list.hpp>

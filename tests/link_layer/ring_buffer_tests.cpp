@@ -1,6 +1,6 @@
 #include <bluetoe/link_layer/ring_buffer.hpp>
 
-#define BOOST_TEST_MODULE
+#define BOOST_TEST_MODULE MASTER_TEST_SUITE_NAME
 #include <boost/test/included/unit_test.hpp>
 
 struct small_ring : bluetoe::link_layer::pdu_ring_buffer< 50 >

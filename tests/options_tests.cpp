@@ -1,7 +1,7 @@
 #include <bluetoe/options.hpp>
 #include <string>
 
-#define BOOST_TEST_MODULE
+#define BOOST_TEST_MODULE MASTER_TEST_SUITE_NAME
 #include <boost/test/included/unit_test.hpp>
 
 #include <type_traits>

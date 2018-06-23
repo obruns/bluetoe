@@ -18,6 +18,9 @@ elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 endif()
 
+# not recommended but simple enough for a demo
+add_definitions(-DMASTER_TEST_SUITE_NAME="${CMAKE_CXX_COMPILER}/${CMAKE_BUILD_TYPE}")
+
 add_subdirectory(bluetoe)
 add_subdirectory(tests)
 add_subdirectory(examples)

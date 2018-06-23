@@ -1,6 +1,6 @@
 #include <bluetoe/link_layer/channel_map.hpp>
 
-#define BOOST_TEST_MODULE
+#define BOOST_TEST_MODULE MASTER_TEST_SUITE_NAME
 #include <boost/test/included/unit_test.hpp>
 
 static constexpr std::uint8_t all_channel_map[] = { 0xff, 0xff, 0xff, 0xff, 0x1f };

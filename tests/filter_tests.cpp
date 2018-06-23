@@ -4,7 +4,7 @@
 #include <bluetoe/attribute.hpp>
 #include <bluetoe/uuid.hpp>
 
-#define BOOST_TEST_MODULE
+#define BOOST_TEST_MODULE MASTER_TEST_SUITE_NAME
 #include <boost/test/included/unit_test.hpp>
 
 namespace blued = bluetoe::details;

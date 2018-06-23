@@ -7,7 +7,7 @@
 #include <bluetoe/server.hpp>
 #include <bluetoe/services/bootloader.hpp>
 
-#define BOOST_TEST_MODULE
+#define BOOST_TEST_MODULE MASTER_TEST_SUITE_NAME
 #include <boost/test/included/unit_test.hpp>
 
 #include "test_gatt.hpp"

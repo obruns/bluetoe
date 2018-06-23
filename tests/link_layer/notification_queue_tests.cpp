@@ -1,7 +1,7 @@
 #include <iostream>
 #include <bluetoe/link_layer/notification_queue.hpp>
 
-#define BOOST_TEST_MODULE
+#define BOOST_TEST_MODULE MASTER_TEST_SUITE_NAME
 #include <boost/test/included/unit_test.hpp>
 
 namespace {

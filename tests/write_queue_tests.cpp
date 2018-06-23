@@ -1,10 +1,12 @@
 #include <iostream>
 #include <bluetoe/write_queue.hpp>
 
-#define BOOST_TEST_MODULE
+#define BOOST_TEST_MODULE MASTER_TEST_SUITE_NAME
 #include <boost/test/included/unit_test.hpp>
 
 namespace blued = bluetoe::details;
+
+BOOST_AUTO_TEST_SUITE( write_queue_tests )
 
 BOOST_FIXTURE_TEST_CASE( empty_write_queue_is_instanceiable, blued::write_queue< blued::no_such_type > )
 {
@@ -123,3 +125,5 @@ BOOST_FIXTURE_TEST_CASE( can_be_freed_and_allocated_again, locked_by_client1 )
     free_write_queue( client1 );
     BOOST_CHECK( allocate_from_write_queue( 15, client2 ) != nullptr );
 }
+
+BOOST_AUTO_TEST_SUITE_END( write_queue_tests )

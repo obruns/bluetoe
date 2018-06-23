@@ -1,6 +1,6 @@
 #include <bluetoe/link_layer/address.hpp>
 
-#define BOOST_TEST_MODULE
+#define BOOST_TEST_MODULE MASTER_TEST_SUITE_NAME
 #include <boost/test/included/unit_test.hpp>
 
 BOOST_FIXTURE_TEST_CASE( is_default_constructable, bluetoe::link_layer::address )

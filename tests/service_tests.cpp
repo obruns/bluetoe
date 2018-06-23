@@ -2,7 +2,7 @@
 #include "test_services.hpp"
 #include "hexdump.hpp"
 
-#define BOOST_TEST_MODULE
+#define BOOST_TEST_MODULE MASTER_TEST_SUITE_NAME
 #include <boost/test/included/unit_test.hpp>
 
 #include <iterator>

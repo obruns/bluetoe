@@ -17,6 +17,7 @@ function(add_and_register_test TARGETNAME)
     add_executable(${TARGETNAME} ${TARGETNAME}.cpp ${ARGV1} ${ARGV2} ${ARGV3} ${ARGV4})
     target_link_libraries(${TARGETNAME} bluetoe test_tools)
     add_test(${TARGETNAME} ${TARGETNAME})
+    set_tests_properties(${TARGETNAME} PROPERTIES ENVIRONMENT "BOOST_TEST_LOGGER=XML,unit_scope,${TARGETNAME}.xml")
 endfunction()
 
 if (BLUETOE_EXCLUDE_SLOW_TESTS)
